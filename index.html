@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Curriculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU DE NAVEGACAO -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- INFO -->
+    <section id="sobre">
+        <h1>Sobre mim</h1>
+        <p>Olá! Sou Matheus Crensiglova. Sou estudante de Análise e Desenvolvimento de sistemas e técnico em robótica industrial. Gosto muito de tecnologia. Meu hobbies prediletos são viajar e ler.</p>
+    </section>
+
+    <!-- FORMACAO -->
+    <section id="formacao">
+        <h1>Formação</h1>
+        <ul>
+            <li><strong>Ensino Médio:</strong> Colégio Est. Dom Orione - Concluído em 2023</li>
+            <li><strong>Graduação:</strong> Análise e Desenvolvimento de Sistemas - Uninter - Cursando</li>
+            <li><strong>Idiomas:</strong> Português (nativo), Inglês (avançado), Francês (intermediário)</li>
+        </ul>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <p>Projetos em que trabalhei: </p>
+        <ul>
+            <li>📌 - Projeto FH e FM - Volvo</li>
+            <li>📌 - Projeto P145 e P245 - Renault</li>
+        </ul>
+    </section>
+
+<!-- SEÇÃO: CONTATO -->
+<section id="contato">
+    <h1>Contato</h1>
+    
+    <div class="contato-info">
+        <p>E-mail: matheuscrensiglova10@gmail.com</p>
+        <p>Telefone: (41) 99999-9999</p>
+        <p>🔗 LinkedIn: <a href="#">www.linkedin.com/in/matheus-crensiglova</a></p>
+    </div>
+
+    <hr>
+
+    <h2>Envie uma mensagem</h2>
+    <form id="formContato">
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="campo">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" placeholder="Assunto da mensagem" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar mensagem</button>
+    </form>
+
+    <!-- Mensagem de validacao-->
+    <div id="mensagemSucesso" class="sucesso" style="display: none;">
+        ✅ Enviado com sucesso! <br>
+        <small>Agradeço pela sua mensagem. Em breve entrarei em contato.</small>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
